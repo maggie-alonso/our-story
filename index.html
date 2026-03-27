@@ -112,7 +112,7 @@ button:active {
 
 <div class="section" id="s1">
 <h1>Hi you 💘</h1>
-<p>I made something small for you...</p>
+<p>I made a little something for you...</p>
 </div>
 
 <div class="section hidden" id="s2">
@@ -172,7 +172,7 @@ button:active {
 <div class="section hidden" id="s9">
 <h1>Our Moments 📸</h1>
 <img id="gallery" src="dinner26.jpeg">
-<button onclick="nextPhoto()">Next Photo ➡️</button>
+<button onclick="nextPhoto()">Next📷</button>
 </div>
 
 <div class="section hidden" id="s10">
@@ -188,17 +188,21 @@ button:active {
 
 <div class="section hidden" id="s12">
 <h1>One more thing…</h1>
-<button onclick="showLove()">TAP HERE</button>
+
+<p style="margin-top:20px; font-size:18px;">
+I love you 💜
+</p>
+
+<p style="margin-top:10px;">
+If I could go back… I’d still choose you. Every time.
+</p>
+
+<button onclick="nextSection()" style="margin-top:25px;">
+TAP HERE➡️
+</button>
 </div>
 
 <div class="section hidden" id="s13">
-<div class="reveal">
-<h1>I love you</h1>
-<p>If I could go back… I’d still choose you. Every time.</p>
-</div>
-</div>
-
-<div class="section hidden" id="s14">
 <h1>And if I had to choose again…</h1>
 <p>I’d still choose you. Always 💜</p>
 
@@ -216,7 +220,7 @@ Read it again🥰
 
 <script>
 let current = 1;
-const total = 14;
+const total = 13;
 
 function showSection(n){
  document.querySelectorAll('.section').forEach(s=>s.classList.add('hidden'));
